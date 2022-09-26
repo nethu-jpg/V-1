@@ -1,0 +1,88 @@
+{
+    "name": "Auto Filter Bot",
+    "description": "Kind of a filter bot where you don't have to add filters manually.",
+    "logo": "https://telegra.ph/file/ab5399610bc8240709c48.jpg",
+    "keywords": [
+        "Auto",
+        "Filter",
+        "UNLIMITED",
+        "Filter",
+        "Telegram Bot",
+        "TroJanzHEX"
+    ],
+    "website": "https://TroJanzHEX.me",
+    "repository": "https://github.com/Kopaing12/Auto_Filter_Unlimited_V1",
+    "success_url": "https://telegram.dog/TroJanzHEX",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "WEBHOOK": {
+            "description": "No need to change this field!",
+            "value": "ANYTHING"
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org or @UseTGXBot",
+            "value": ""
+        },
+        "TG_USER_SESSION": {
+            "description": "A pyrogram user session string. Generate from https://repl.it/@prgofficial/String-Gen",
+            "value": ""
+        },
+        "AUTH_USERS": {
+            "description": "ID of users that can use the bot commands",
+            "value": ""
+        },
+        "DATABASE_URI": {
+            "description": "Database URL from https://cloud.mongodb.com/",
+            "value": ""
+        },
+        "DATABASE_NAME": {
+            "description": "Your database name from mongoDB. ( Default will 'Cluster0' )",
+            "value": "Cluster0"
+        },
+        "DATABASE_NAME2": {
+            "description": "Your database name from mongoDB. ( Default will 'Cluster0' )",
+            "value": "Unlimited",
+            "required": false
+        },
+        "DOC_SEARCH": {
+            "description": "Should bot search for document files in channels ( Give 'yes' or 'no' )",
+            "value": "yes"
+        },
+        "VID_SEARCH": {
+            "description": "Should bot search for video files in channels ( Give 'yes' or 'no' )",
+            "value": "yes"
+        },
+        "MUSIC_SEARCH": {
+            "description": "Should bot search for music files in channels ( Give 'yes' or 'no' )",
+            "value": "yes"
+        },
+        "SAVE_USER": {
+            "description": "Do you need to save user details? Usefull for getting userinfo and total user counts. May reduce filter capacity. Give yes or no",
+            "value": "yes",
+            "required": false
+        },
+        "HEROKU_API_KEY": {
+            "description": "To check dyno status. Go to https://dashboard.heroku.com/account, scroll down and press Reveal API",
+            "value": "None",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
