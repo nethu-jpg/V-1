@@ -643,13 +643,13 @@ async def manual_filters(client, message, text=False):
                     else:
                         if btn == "[]":
                             await message.reply_cached_media(
-                                text=f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or ""
+                                f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or ""
                             )
                         else:
                             button = eval(btn) 
                             await message.reply_cached_media(
                                 fileid,
-                                text=f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or "",
+                                f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or "",
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
                 except Exception as e:
