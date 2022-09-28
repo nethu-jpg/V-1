@@ -631,11 +631,11 @@ async def manual_filters(client, message, text=False):
                 try:
                     if fileid == "None":
                         if btn == "[]":
-                            await message.reply_text(reply_text, disable_web_page_preview=True)
+                            await message.reply_text(f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>", disable_web_page_preview=True)
                         else:
                             button = eval(btn)
                             await message.reply_text(
-                                reply_text,
+                                f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>",
                                 disable_web_page_preview=True,
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
@@ -643,13 +643,13 @@ async def manual_filters(client, message, text=False):
                         if btn == "[]":
                             await message.reply_cached_media(
                                 fileid,
-                                caption=reply_text or ""
+                                caption=f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>" or ""
                             )
                         else:
                             button = eval(btn) 
                             await message.reply_cached_media(
                                 fileid,
-                                caption=reply_text or "",
+                                caption=f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>" or "",
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
                 except Exception as e:
@@ -657,15 +657,5 @@ async def manual_filters(client, message, text=False):
                     pass
                 break 
                 
-    if Config.SAVE_USER == "yes":
-        try:
-            await add_user(
-                str(message.from_user.id),
-                str(message.from_user.username),
-                str(message.from_user.first_name + " " + (message.from_user.last_name or "")),
-                str(message.from_user.dc_id)
-            )
-        except:
-            pass
-      
+
 
