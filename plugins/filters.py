@@ -631,11 +631,11 @@ async def manual_filters(client, message, text=False):
                 try:
                     if fileid == "None":
                         if btn == "[]":
-                            await message.reply_text(f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>", disable_web_page_preview=True)
+                            await message.reply_text(f"Your {message.text} is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>", disable_web_page_preview=True)
                         else:
                             button = eval(btn)
                             await message.reply_text(
-                                f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>",
+                                f"Your {message.text} is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>",
                                 disable_web_page_preview=True,
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
@@ -643,13 +643,13 @@ async def manual_filters(client, message, text=False):
                         if btn == "[]":
                             await message.reply_cached_media(
                                 fileid,
-                                caption=f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>" or ""
+                                caption=f"Your {message.text}  is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>" or ""
                             )
                         else:
                             button = eval(btn) 
                             await message.reply_cached_media(
                                 fileid,
-                                caption=f"Your ~~{message.text} ~~ is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>" or "",
+                                caption=f"Your {message.text}  is Ready** 💡\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🏅 {message.chat.title} 🏅</b></a>" or "",
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
                 except Exception as e:
