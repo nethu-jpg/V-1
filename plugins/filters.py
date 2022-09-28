@@ -632,24 +632,24 @@ async def manual_filters(client, message, text=False):
                     if fileid == "None":
                         if btn == "[]":
                             await message.reply_text(
-                            f"Your ~~{message.text} ~~ is Ready** 🍁 : \nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>", disable_web_page_preview=True)
+                            captain=f"Your ~~{message.text} ~~ is Ready** 🍁 : \nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>", disable_web_page_preview=True)
                         else:
                             button = eval(btn)
                             await message.reply_text(
-                                f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n<i><b>🔰 {message.chat.title} 🔰</b></a>",
+                                captain=f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n<i><b>🔰 {message.chat.title} 🔰</b></a>",
                                 disable_web_page_preview=True,
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
                     else:
                         if btn == "[]":
                             await message.reply_cached_media(
-                                f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or ""
+                                captain=f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or ""
                             )
                         else:
                             button = eval(btn) 
                             await message.reply_cached_media(
                                 fileid,
-                                f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or "",
+                                captain=f"Your ~~{message.text} ~~ is Ready** 🍁\nRequest by :{message.from_user.mention}\nResults : {reply_text}\n\n<i><b>🔰 {message.chat.title} 🔰</b></a>" or "",
                                 reply_markup=InlineKeyboardMarkup(button)
                             )
                 except Exception as e:
