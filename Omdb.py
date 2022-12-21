@@ -1,9 +1,9 @@
 import os
 import re
 import base64
-from imdb import IMDb
+from imdb import Cinemagoer
           
-imdb = IMDb() 
+imdb = Cinemagoer() 
 MAX_LIST_ELM = None
 
 async def get_posters(query, bulk=False, id=False, file=None):
