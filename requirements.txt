@@ -1,8 +1,8 @@
-pyrogram>=2.0.30
+pyrogram==2.0.30
 TgCrypto
 umongo
 dnspython
 heroku3
-imdbpy==2022.7.9
+imdbpy
 requests
 bs4
