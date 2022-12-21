@@ -9,13 +9,13 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5806016246:AAE_C1NtmjSpgFRk8pd1v0nHbOkFbVxHn8k")
 
 # Get from my.telegram.org (or @UseTGXBot)
-APP_ID = int(os.environ.get("APP_ID", "7880210"))
+APP_ID = int(os.environ.get("APP_ID", "7051195"))
 
 # Get from my.telegram.org (or @UseTGXBot)
-API_HASH = os.environ.get("API_HASH", "1bb4b2ff1489cc06af37cba448c8cce9")
+API_HASH = os.environ.get("API_HASH", "a36d0269f12722e154f89ff5f0135f04")
 
 # Generate a user session string 
-TG_USER_SESSION = os.environ.get("TG_USER_SESSION", "BQC7m_aSlwlhua-XDK0rildU0WFwtt31aq0Z8Ruyn3lh3UbzluUzdfdpxDz-IN3juiGGrovcmK-MwiYbobLoSfdUQcilgWSaMaqgNqpii_nUncs6Vu7vIOHp8JcsQ5E0CneipTD3FdhAHGf_lVC9pkVvavH4ijFMZl0pmQnDyKYU-Ogeu5OOo7FOj6j_SUfG2_A3SOk-rJxm_lcTskQ7btlLgqbkMQR3FtpR02leBeBR-52m8AnAFp4mlnPei-CzcmRGg9m1LFcUe_CGcpfD3AhoZOFIXQzogJLTl6cCcjslZCqQ5b9aDGc6d0iZW9Imj2YWMtKte8YG589xI68Mf4VuYbzVEgA")
+TG_USER_SESSION = os.environ.get("TG_USER_SESSION", "BQACwrVuVFahR0k9p9h_C5CpL8poDxAqUEJnb8u0bJe18lbch9OV7ftYSKvZckbTuSwjdIvGt28tUbwwy-PDhXJihTfM2y-XRrzz_LuZMQGFg8vLmkWC9D2hIE6tCKZXu_8ASRte5un3AZNWn1P-A_IhA44ZMRpQCKXulxScd3kXmzdZoHQDFFaFF_tMpJUaWJoVBtEBHVV0bHJZfiItR7WXsjt-nVGxF0NbZUo7l2da9w6w9nj4AdeKWJzi6A1u0MAP-VzKhfBnpOLa5Fuh7vKL4wR2VUCHqJxWkmnHsqOL-IQPdOGJ6itmopM6XDzJr-58OhU-pE1_3RY8GUQ8XEr7SEzWqwA")
 
 # Database URL from https://cloud.mongodb.com/
 DATABASE_URI = os.environ.get("DATABASE_URI", "mongodb+srv://bot1:bot1@cluster0.fqzak9o.mongodb.net/?retryWrites=true&w=majority")
