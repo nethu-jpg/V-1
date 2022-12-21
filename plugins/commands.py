@@ -7,7 +7,7 @@ import math
 import json
 import time
 import shutil
-import heroku3
+
 import requests
 import random
 
