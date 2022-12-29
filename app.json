@@ -16,7 +16,8 @@
     "env": {
         "TG_BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "WEBHOOK": {
             "description": "No need to change this field!",
@@ -24,27 +25,33 @@
         },
         "API_HASH": {
             "description": "Your API Hash from my.telegram.org or @UseTGXBot",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "APP_ID": {
             "description": "Your APP ID from my.telegram.org or @UseTGXBot",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "TG_USER_SESSION": {
             "description": "A pyrogram user session string. Generate from https://repl.it/@prgofficial/String-Gen",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "AUTH_USERS": {
             "description": "ID of users that can use the bot commands",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "DATABASE_URI": {
             "description": "Database URL from https://cloud.mongodb.com/",
-            "value": ""
+            "value": "",
+            "required": false
         },
         "DATABASE_NAME": {
             "description": "Your database name from mongoDB. ( Default will 'Cluster0' )",
-            "value": "Cluster0"
+            "value": "Cluster0",
+            "required": false
         },
         "DATABASE_NAME2": {
             "description": "Your database name from mongoDB. ( Default will 'Cluster0' )",
@@ -53,15 +60,18 @@
         },
         "DOC_SEARCH": {
             "description": "Should bot search for document files in channels ( Give 'yes' or 'no' )",
-            "value": "yes"
+            "value": "yes",
+            "required": false
         },
         "VID_SEARCH": {
             "description": "Should bot search for video files in channels ( Give 'yes' or 'no' )",
-            "value": "yes"
+            "value": "yes",
+            "required": false
         },
         "MUSIC_SEARCH": {
             "description": "Should bot search for music files in channels ( Give 'yes' or 'no' )",
-            "value": "yes"
+            "value": "yes",
+            "required": false
         },
         "SAVE_USER": {
             "description": "Do you need to save user details? Usefull for getting userinfo and total user counts. May reduce filter capacity. Give yes or no",
